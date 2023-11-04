@@ -1,0 +1,140 @@
+:root {
+    --redColor: red;
+    --size01: 12.5em;
+}
+
+
+/* em */
+.element1 {
+    font-size: 1em;
+    /* 1 * 16 = 16px; */
+}
+.element2 {
+    font-size: 1.5em;
+    /* 1.5 * 16 = 24px */
+}
+.element3 {
+    font-size: 1.5em;
+    /* 1.5 * 24 = 36px */
+}
+.element4 {
+    font-size: 2em;
+    /* 2 * 24 = 48px */
+}
+.box-wrapers {
+    display: flex;
+}
+.box1 {
+    width: var(--size01);
+    height: var(--size01);
+    /* 12.5 * 16 = 200px */
+    background-color: var(--redColor);
+}
+.box2 {
+    width: 12.5em;
+    height: 12.5em;
+    font-size: 20px;
+    /* 12.5 * 20 = 250px */
+    background-color: lightgreen;
+}
+
+
+
+
+/* rem */
+.element1-rem {
+    font-size: 1rem;
+    /* 1 * 16 = 16px; */
+}
+.element2-rem {
+    font-size: 1.5rem;
+    /* 1.5 * 16 = 24px */
+}
+.element3-rem {
+    font-size: 1.5rem;
+    /* 1.5 * 16 = 24px */
+}
+.element4-rem{
+    font-size: 2rem;
+    /* 2 * 16 = 32px */
+}
+.box1-rem {
+    width: 12.5rem;
+    height: 12.5rem;
+    /* 12.5 * 16 = 200px */
+    background-color: lightseagreen;
+}
+.box2-rem {
+    width: 12.5rem;
+    height: 12.5rem;
+    font-size: 20px;
+    /* 12.5 * 16 = 200px */
+    background-color: lightslategray;
+}
+
+
+
+
+/* px to em => px ზომა გავყოთ ელემენტის ფონტის ზომაზე ან მშობლიდან მემკვიდრეობით გადმოსულ ფონტის ზომაზე */
+/* px to rem => px ზომა გავყოთ ან html ტეგის ფონტის ზომაზე ან თუ არ არის მითთებული html-ზე მაშინ დეფაულტ ზომაზე 16-ზე */
+
+
+
+
+
+
+/* practice */
+.container {
+    max-width: 1020px;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin: 30px;
+    background-color: lightslategrey;
+}
+.container-text-block {
+    max-width: 750px;
+    width: 100%;
+}
+.container_title {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 6px;
+    color: red;
+    margin: 30px;
+}
+.container_text {
+    line-height: 24px;
+}
+
+
+/*  */
+.container2 {
+    /* 1020 / 16 = 63.75 */
+    max-width: 63.75rem;
+    /* margin: 0 auto; */
+    /* 30px / 16px */
+    margin: 1.875rem;
+    background-color: lightcoral;
+}
+.container-text-block2 {
+    /* 750 / 16 = 46.875 */
+    max-width: 46.875rem;
+}
+.container_title2 {
+    /* 42 / 16 = 2.625 */
+    font-size: 2.625rem;
+    /* 50 / 42 = 1.19 - nawili
+     an * 100%  = 1%*/
+    line-height: 1.19;
+    /* line-height: 1% */ 
+    /* 6 / 42  = 0.14*/
+    letter-spacing: 0.14em;
+    color: red;
+    /* 30 / 42 =  */
+    margin: 0.71em;
+}
+.container_text2 {
+    /* 24 / 16 = 1.5 
+    an * 100%  = 150%*/
+    line-height: 1.5;
+}
