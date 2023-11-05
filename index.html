@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 14</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- fb meta tags -->
@@ -20,6 +24,40 @@
     />
   </head>
   <body>
+    <header>
+      <div class="header-wraper">
+        <a href="">LOGO</a>
+        <nav class="navigation" id="navigationBlock">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Info</a>
+            </li>
+            <li>
+              <a href="#section-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger" id="burgerBlock">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <!-- <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            /> -->
+          <!-- </svg>  -->
+        </div>
+      </div>
+    </header>
     <!-- Css Units -->
     <section>
       <!-- 1. em - ზომა დამოკიდებულია მშობლის ფონტის ზომაზე ან ელემენტის ფონტის ზომაზე -->
@@ -71,7 +109,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="section-contact">
       <div class="container2">
         <div class="container-text-block2">
           <h2 class="container_title2">Lorem Ipsum</h2>
@@ -84,5 +122,8 @@
         </div>
       </div>
     </section>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script> -->
   </body>
 </html>
